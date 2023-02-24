@@ -10,6 +10,13 @@ link
 
 short description: 
 
+Problem solved:
+
+Fix unworking linter
+
+Learned: 
+
+Learned how to set a different settings.json files for different projects in vs code
 
 ## 2 NFT Preview Card Component
 
