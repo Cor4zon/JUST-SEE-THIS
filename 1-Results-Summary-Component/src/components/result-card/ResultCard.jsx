@@ -9,11 +9,13 @@ const ResultCard = () => {
                 <p className="result-score">76</p>
                 <p className="result-of-100">of 100</p>
             </div>
-            <p className="h3">Great</p>
-            <p className="result-info">
-                Your performance exceed 65% of <br /> the people conducting the
-                test here!
-            </p>
+            <div className="result-info-container">
+                <p className="h3">Great</p>
+                <p className="result-info">
+                    Your performance exceed 65% of the people conducting the
+                    test here!
+                </p>
+            </div>
         </div>
     )
 }
