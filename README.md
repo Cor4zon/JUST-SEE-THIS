@@ -20,7 +20,7 @@ Learned:
 
 Learned how to set a different settings.json files for different projects in vs code
 
-Learned how to add different custom fonts to project
+Learned how [to add different custom fonts to project](https://doka.guide/css/font-face/)
 
 ## 2 NFT Preview Card Component
 
