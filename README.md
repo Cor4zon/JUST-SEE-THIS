@@ -14,9 +14,13 @@ Problem solved:
 
 Fix unworking linter
 
+Added custom fonts
+
 Learned: 
 
 Learned how to set a different settings.json files for different projects in vs code
+
+Learned how to add different custom fonts to project
 
 ## 2 NFT Preview Card Component
 
