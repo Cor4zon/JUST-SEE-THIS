@@ -32,5 +32,9 @@ html {
 
     .summary-container {
         width: 368px;
+        padding-top: 38px;
+        padding-bottom: 46px;
+        padding-left: 40px;
+        text-align: start;
     }
 }

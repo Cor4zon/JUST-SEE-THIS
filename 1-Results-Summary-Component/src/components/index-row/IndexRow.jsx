@@ -1,12 +1,14 @@
-import React from 'react';
-import "./IndexRow.scss";
+import './IndexRow.scss'
 
-const IndexRow = () => {
+const IndexRow = ({ icon, category, score }) => {
     return (
-        <div>
-            
-        </div>
-    );
-};
+        <div className="index-row-container">
+            <img src={icon} />
 
-export default IndexRow;
+            <p>{category}</p>
+            <p>{`${score}/100`}</p>
+        </div>
+    )
+}
+
+export default IndexRow
