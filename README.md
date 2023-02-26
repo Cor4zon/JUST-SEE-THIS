@@ -18,7 +18,7 @@ Added custom fonts
 
 Dynamic image loading (wip)🔥
 
-**Learned: **
+**Learned:**
 
 Learned how to set a different settings.json files for different projects in vs code
 
