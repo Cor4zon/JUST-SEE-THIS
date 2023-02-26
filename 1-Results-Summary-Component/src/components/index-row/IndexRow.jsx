@@ -1,11 +1,21 @@
 import './IndexRow.scss'
 
-const IndexRow = ({ icon, category, score }) => {
+const IndexRow = ({ icon, category, score, color, background }) => {
     return (
-        <div className="index-row-container">
+        <div
+            className="index-row-container"
+            style={{
+                background: background,
+            }}
+        >
             <div className="index-row-category-desc">
                 <img className="index-row-icon" src={icon} />
-                <p className="index-row-category-title">{category}</p>
+                <p
+                    style={{ color: color }}
+                    className="index-row-category-title"
+                >
+                    {category}
+                </p>
             </div>
             <p className="index-row-score">
                 {score}

@@ -3,9 +3,8 @@ import './Button.scss'
 
 const Button = () => {
     return (
-        <div>
-            // todo: hover effect
-            <button>Continue</button>
+        <div className="button">
+            <p>{`Continue`}</p>
         </div>
     )
 }

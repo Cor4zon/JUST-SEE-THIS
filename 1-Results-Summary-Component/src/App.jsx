@@ -15,21 +15,29 @@ function App() {
             category: 'Reaction',
             score: 80,
             icon: Reaction,
+            color: '#FF5555',
+            background: `linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555`,
         },
         {
             category: 'Memory',
             score: 92,
             icon: Memory,
+            color: '#FFB21E',
+            background: `linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E`,
         },
         {
             category: 'Verbal',
             score: 61,
             icon: Verbal,
+            color: '#00BB8F',
+            background: `linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F`,
         },
         {
             category: 'Visual',
             score: 72,
             icon: Visual,
+            color: '#1125D6',
+            background: `linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6`,
         },
     ]
 
@@ -39,16 +47,20 @@ function App() {
                 <ResultCard />
                 <div className="summary-container">
                     <p className="summary-label">Summary</p>
-                    {data.map((item) => {
-                        return (
-                            <IndexRow
-                                key={item.category}
-                                icon={item.icon}
-                                category={item.category}
-                                score={item.score}
-                            />
-                        )
-                    })}
+                    <div className="summary-content">
+                        {data.map((item) => {
+                            return (
+                                <IndexRow
+                                    key={item.category}
+                                    icon={item.icon}
+                                    category={item.category}
+                                    score={item.score}
+                                    color={item?.color}
+                                    background={item?.background}
+                                />
+                            )
+                        })}
+                    </div>
                     <Button></Button>
                 </div>
             </Card>

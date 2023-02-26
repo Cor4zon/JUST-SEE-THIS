@@ -8,9 +8,16 @@ html {
 }
 
 .App {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     display: grid;
     place-content: center;
+}
+
+@media (min-width: 380px) {
+    .App {
+        position: relative;
+        top: 50px;
+    }
 }
 
 .summary-label {
@@ -22,19 +29,38 @@ html {
     line-height: 23px;
     color: #303b59;
     text-align: left;
+    margin-left: 32px;
+}
+
+.summary-container {
+    width: 375px;
+    text-align: start;
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
+.summary-content {
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 @media (min-width: 380px) {
+    .summary-container {
+        width: 368px;
+    }
+
     .summary-label {
         font-size: 24px;
         line-height: 31px;
     }
 
-    .summary-container {
-        width: 368px;
-        padding-top: 38px;
-        padding-bottom: 46px;
+    .summary-content {
+        padding-top: 28px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
         padding-left: 40px;
-        text-align: start;
+        padding-right: 40px;
     }
 }
