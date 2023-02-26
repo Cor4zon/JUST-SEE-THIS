@@ -10,13 +10,15 @@ link
 
 short description: 
 
-Problem solved:
+**Problem solved:**
 
 Fix unworking linter
 
 Added custom fonts
 
-Learned: 
+Dynamic image loading (wip)🔥
+
+**Learned: **
 
 Learned how to set a different settings.json files for different projects in vs code
 
