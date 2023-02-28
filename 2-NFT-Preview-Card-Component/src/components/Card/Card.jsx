@@ -7,15 +7,18 @@ import IconEthereum from '../../assets/images/icon-ethereum.svg';
 import IconClock from '../../assets/images/icon-clock.svg';
 
 const Card = () => {
-  console.log(EquilibriumImg);
   return (
     <CardWrapper>
-      <CardImage src={EquilibriumImg} alt={`image-equilibrium`} />
+      <CardImageWrapper>
+        <CardImage />
+        <CardImageBackground>
+          <ViewIcon src={IconView} alt="eyewitness" />
+        </CardImageBackground>
+      </CardImageWrapper>
       <Title>Equilibrium #3429</Title>
       <Description>Our Equilibrium collection promotes balance and calm.</Description>
       <InfoWrapper>
         <CounterText>
-          {/* <IconImage src={IconClock} alt={'clock'} /> */}
           <CounterIcon src={IconEthereum} alt="money" />
           0.041 ETH
         </CounterText>
@@ -36,32 +39,87 @@ const Card = () => {
 
 export default Card;
 
+const CardImageWrapper = styled.div`
+  padding-top: 24px;
+  position: relative;
+`;
+
 const CardWrapper = styled.div`
-  // margin: 62px 24px;
   width: 100%;
-  // height: 500px;
   background-color: #15263f;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
   border-radius: 15px;
+
+  @media (min-width: 768px) {
+    width: 350px;
+    height: 596px;
+  }
 `;
 
-const CardImage = styled.img`
+const CardImage = styled.div`
   width: 278px;
   height: 278px;
-  margin: 25px;
-  margin-bottom: 0;
+  margin: 0 25px;
   border-radius: 8px;
+  background-image: url(${EquilibriumImg});
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    width: 302px;
+    height: 302px;
+  }
+
+  &:hover {
+    visibility: hidden;
+  }
+`;
+
+const CardImageBackground = styled.div`
+  // display: none;
+  margin: 24px 25px;
+  width: 278px;
+  height: 278px;
+  background: #00fff8;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media (min-width: 768px) {
+    width: 302px;
+    height: 302px;
+  }
+
+  &:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+`;
+
+const ViewIcon = styled.img`
+  width: 48px;
+  height: 48px;
 `;
 
 const Title = styled.p`
   margin: 0;
   margin-top: 24px;
+  margin-left: 24px;
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 28px;
   color: #ffffff;
+  text-align: left;
+
+  &:hover {
+    color: #00fff8;
+  }
 `;
 
 const Description = styled.p`
@@ -77,12 +135,20 @@ const Description = styled.p`
   color: #8bacd9;
 
   text-align: left;
+
+  @media (min-width: 768px) {
+    margin-left: 0 24px;
+  }
 `;
 
 const InfoWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 24px;
+
+  @media (min-width: 768px) {
+    // margin-left: 24px;
+  }
 `;
 
 const CounterIcon = styled.img`
@@ -132,6 +198,10 @@ const AuthorWrapper = styled.div`
   margin-top: 16px;
   margin-left: 24px;
   padding-bottom: 24px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
 `;
 
 const AuthorImg = styled.img`
@@ -160,4 +230,8 @@ const AuthorNameText = styled.p`
   font-size: 15px;
   line-height: 19px;
   color: #ffffff;
+
+  &:hover {
+    color: #00fff8;
+  }
 `;
