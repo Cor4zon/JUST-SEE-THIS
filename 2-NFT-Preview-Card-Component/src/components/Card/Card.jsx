@@ -26,8 +26,9 @@ const Card = () => {
       <Line />
       <AuthorWrapper>
         <AuthorImg src={AvatarImg} alt={'photo'} />
-        <AuthorText>Creation of</AuthorText>
-        <AuthorNameText>Jules Wyvern</AuthorNameText>
+        <AuthorText>
+          Creation of <AuthorNameText>Jules Wyvern</AuthorNameText>
+        </AuthorText>
       </AuthorWrapper>
     </CardWrapper>
   );
@@ -120,16 +121,17 @@ const DaysLeftText = styled.p`
 `;
 
 const Line = styled.div`
-  width: 278px;
   height: 1px;
-  // margin: 0 24px;
+  margin: 0 25px;
   background: #2e405a;
 `;
 
 const AuthorWrapper = styled.div`
   display: flex;
+  align-items: center;
   margin-top: 16px;
   margin-left: 24px;
+  padding-bottom: 24px;
 `;
 
 const AuthorImg = styled.img`
@@ -138,6 +140,10 @@ const AuthorImg = styled.img`
 `;
 
 const AuthorText = styled.p`
+  margin: 0;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
@@ -147,6 +153,7 @@ const AuthorText = styled.p`
 `;
 
 const AuthorNameText = styled.p`
+  margin-left: 5px;
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
