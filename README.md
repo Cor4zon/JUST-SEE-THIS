@@ -1,6 +1,12 @@
 # JUST-SEE-THIS
 ❗️❗️❗️
 
+**Devices' sizes**
+
+- Mobile: 375px
+
+- Desktop: 1440px
+
 check that issue https://github.com/Cor4zon/JUST-SEE-THIS/issues/4
 
 Newbie
