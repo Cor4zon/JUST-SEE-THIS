@@ -1,10 +1,11 @@
-import React, { Image } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import EquilibriumImg from '../../assets/images/image-equilibrium.jpg';
 import AvatarImg from '../../assets/images/image-avatar.png';
 import IconView from '../../assets/images/icon-view.svg';
 import IconEthereum from '../../assets/images/icon-ethereum.svg';
 import IconClock from '../../assets/images/icon-clock.svg';
+import EquilibriumHoverImg from '../../assets/images/image-equilibrium-hover.png'
 
 const Card = () => {
   return (
@@ -50,7 +51,7 @@ const CardWrapper = styled.div`
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
   border-radius: 15px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 390px) {
     width: 350px;
     height: 596px;
   }
@@ -64,18 +65,18 @@ const CardImage = styled.div`
   background-image: url(${EquilibriumImg});
   background-size: cover;
 
-  @media (min-width: 768px) {
+  @media (min-width: 390px) {
     width: 302px;
     height: 302px;
   }
 
   &:hover {
-    visibility: hidden;
+    background-image: url(${EquilibriumHoverImg});
   }
 `;
 
 const CardImageBackground = styled.div`
-  // display: none;
+  display: none;
   margin: 24px 25px;
   width: 278px;
   height: 278px;
@@ -85,9 +86,9 @@ const CardImageBackground = styled.div`
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 390px) {
     width: 302px;
     height: 302px;
   }
@@ -131,12 +132,11 @@ const Description = styled.p`
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  /* Soft Blue */
   color: #8bacd9;
 
   text-align: left;
 
-  @media (min-width: 768px) {
+  @media (min-width: 390px) {
     margin-left: 0 24px;
   }
 `;
@@ -145,10 +145,6 @@ const InfoWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 24px;
-
-  @media (min-width: 768px) {
-    // margin-left: 24px;
-  }
 `;
 
 const CounterIcon = styled.img`
@@ -199,7 +195,7 @@ const AuthorWrapper = styled.div`
   margin-left: 24px;
   padding-bottom: 24px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 390px) {
     padding-bottom: 32px;
   }
 `;
