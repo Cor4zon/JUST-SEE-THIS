@@ -1,6 +1,7 @@
 # JUST-SEE-THIS
 ❗️❗️❗️
 
+check that issue https://github.com/Cor4zon/JUST-SEE-THIS/issues/4
 
 Newbie
 
