@@ -82,3 +82,42 @@ https://www.frontendmentor.io/challenges/maker-prelaunch-landing-page-WVZIJtKLd
 ## 13 Social media dashboard with theme switcher
 
 https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H
+
+
+
+**Intermediate**
+
+14. Clock App
+
+https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM
+
+15. Room homepage 
+
+https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq
+
+16. Space tourism multi-page website
+
+https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
+
+17. Planets fact site
+
+https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f
+
+18. Creative agency single-page site
+
+https://www.frontendmentor.io/challenges/creative-agency-singlepage-site-Pq6V3I2RM
+
+**Advanced**
+
+19. Multi-step form
+
+https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ
+
+
+20. REST Countries API with color theme switcher
+
+https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
+
+21. Connect Four game
+
+https://www.frontendmentor.io/challenges/connect-four-game-6G8QVH923s
