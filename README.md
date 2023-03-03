@@ -38,6 +38,8 @@ https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
 
 ## 3 Product preview card component
 
+https://product-preview-card-component-seven-neon.vercel.app/
+
 https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
 
 ## 4 Skilled e-learning landing page
