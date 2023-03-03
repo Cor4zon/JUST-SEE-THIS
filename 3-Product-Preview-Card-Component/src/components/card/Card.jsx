@@ -59,14 +59,27 @@ const StyledImage = styled.div`
 
 const ContentWrapper = styled.div`
   padding: 0 24px;
+  padding-bottom: 24px;
   text-align: left;
+
+    @media (min-width: 500px) {
+      padding: 32px 24px;
+  }
 `;
 
 const Title = styled.p`
+  margin-top: 12px;
+  margin-bottom: 16px;
+
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
   color: #1c232b;
+
+    @media (min-width: 500px) {
+      margin-top: 20px;
+      margin-bottom: 24px;
+  }
 `;
 
 const Perfume = styled.p`
@@ -76,6 +89,12 @@ const Perfume = styled.p`
   line-height: 15px;
   letter-spacing: 5px;
   color: #6c7289;
+
+  margin-bottom: 20px;
+
+    @media (min-width: 500px) {
+      margin: 0
+  }
 `;
 
 const Description = styled.p`
@@ -84,6 +103,14 @@ const Description = styled.p`
   font-size: 14px;
   line-height: 23px;
   color: #6c7289;
+
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  @media (min-width: 500px) {
+    margin-top: 24px;
+    margin-bottom: 29px;
+  }
 `;
 
 const PriceText = styled.p`
@@ -91,6 +118,7 @@ const PriceText = styled.p`
   font-size: 32px;
   line-height: 32px;
   color: #3d8168;
+  margin: 0;
 `;
 
 const OldPriceText = styled.p`
@@ -105,6 +133,15 @@ const OldPriceText = styled.p`
 `;
 
 const PriceWrapper = styled.div`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+
+
+  margin-top: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: 500px) {
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
 `
