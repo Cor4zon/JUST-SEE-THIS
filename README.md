@@ -11,7 +11,7 @@ check that issue https://github.com/Cor4zon/JUST-SEE-THIS/issues/4
 
 Newbie
 
-## 1. [Results summary component](https://results-summary-component-two.vercel.app/)
+## 1. [Results summary component](https://results-summary-component-two.vercel.app/) ✅
 
 link 
 
@@ -31,7 +31,7 @@ Learned how to set a different settings.json files for different projects in vs 
 
 Learned how [to add different custom fonts to project](https://doka.guide/css/font-face/)
 
-## 2 NFT Preview Card Component
+## 2 NFT Preview Card Component ✅
 
 https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
 
