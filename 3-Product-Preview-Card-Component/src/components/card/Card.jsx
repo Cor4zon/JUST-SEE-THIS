@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Card = () => {
   return (
     <CardWrapper>
-      <StyledImage src={MobileImg} alt={'chanel'} />
+      <StyledImage />
       <ContentWrapper>
         <Perfume>PERFUME</Perfume>
         <Title>Gabrielle Essence Eau De Parfum</Title>
@@ -26,15 +26,33 @@ const Card = () => {
 export default Card;
 
 const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 28px 16px;
   background-color: white;
   border-radius: 10px;
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+    max-width: 600px;
+    max-height: 450px;
+  }
 `;
 
-const StyledImage = styled.img`
-  width: 100%;
+const StyledImage = styled.div`
   border-radius: 10px 10px 0 0;
+  background-image: url(${MobileImg});
+  background-size: cover;
+  min-width: 343px;
+  min-height: 240px;
+
+  @media (min-width: 500px) {
+    border-radius: 10px 0 0 10px;
+    min-width: 300px;
+    min-height: 450px;
+    background-image: url(${DesktopImg});
+  }
 `;
 
 const ContentWrapper = styled.div`
