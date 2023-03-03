@@ -2,6 +2,7 @@ import React from 'react';
 import MobileImg from '../../assets/images/image-product-mobile.jpg';
 import DesktopImg from '../../assets/images/image-product-desktop.jpg';
 import styled from 'styled-components';
+import Button from '../button/Button';
 
 const Card = () => {
   return (
@@ -18,6 +19,7 @@ const Card = () => {
           <PriceText>$149.99</PriceText>
           <OldPriceText>$169.99</OldPriceText>
         </PriceWrapper>
+        <Button />
       </ContentWrapper>
     </CardWrapper>
   );
