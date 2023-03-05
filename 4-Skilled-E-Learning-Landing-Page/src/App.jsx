@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header>
-        <StyledLogoImg src={LogoLightImg} alt="logo" />
+        <StyledLogoImg src={LogoDarkImg} alt="logo" />
         <Button color={`#13183F`} />
       </header>
       <main></main>
