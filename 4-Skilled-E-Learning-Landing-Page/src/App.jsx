@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import HeroImgMobile from './assets/image-hero-mobile.png';
 import HeroImgTablet from './assets/image-hero-tablet.png';
 import HeroImgDesktop from './assets/image-hero-desktop.png';
+import Card from './components/card/Card';
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
           </InfoText>
           <Button color={`red`} />
           <StyledHeroImg />
+
+          <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
+          <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
+                    <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
         </Content>
       </main>
 
