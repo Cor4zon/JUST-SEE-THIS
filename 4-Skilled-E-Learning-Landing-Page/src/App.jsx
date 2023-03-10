@@ -3,6 +3,9 @@ import Button from './components/button/Button';
 import LogoLightImg from './assets/logo-light.svg';
 import LogoDarkImg from './assets/logo-dark.svg';
 import styled from 'styled-components';
+import HeroImgMobile from './assets/image-hero-mobile.png';
+import HeroImgTablet from './assets/image-hero-tablet.png';
+import HeroImgDesktop from './assets/image-hero-desktop.png';
 
 function App() {
   return (
@@ -19,9 +22,14 @@ function App() {
             knowledge you need to live the life you want.
           </InfoText>
           <Button color={`red`} />
+          <StyledHeroImg />
         </Content>
       </main>
-      <footer></footer>
+
+      <footer>
+        <StyledLogoImg src={LogoLightImg} alt="logo" />
+        <Button color={`red`} />
+      </footer>
     </>
   );
 }
@@ -30,7 +38,9 @@ export default App;
 
 const StyledLogoImg = styled.img``;
 
-const Content = styled.div``;
+const Content = styled.div`
+  padding: 16px;
+`;
 
 const TitleText = styled.p`
   font-family: 'Plus Jakarta Sans';
@@ -50,4 +60,11 @@ const InfoText = styled.p`
   line-height: 26px;
   color: #83869a;
   text-align: left;
+`;
+
+const StyledHeroImg = styled.div`
+  background-image: url(${HeroImgMobile});
+  background-size: cover;
+  width: 100%;
+  height: 300px;
 `;
