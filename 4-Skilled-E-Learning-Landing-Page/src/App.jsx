@@ -22,18 +22,18 @@ function App() {
             Our modern courses across a range of in-demand skills will give you the
             knowledge you need to live the life you want.
           </InfoText>
-          <Button color={`red`} />
+          <Button gradient={`linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)`} />
           <StyledHeroImg />
 
           <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
           <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
-                    <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
+            <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
         </Content>
       </main>
 
       <footer>
         <StyledLogoImg src={LogoLightImg} alt="logo" />
-        <Button color={`red`} />
+        <Button gradient={`linear-gradient(180deg, #4851FF 0%, #F02AA6 100%)`} />
       </footer>
     </>
   );

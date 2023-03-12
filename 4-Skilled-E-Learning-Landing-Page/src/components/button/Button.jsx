@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = ({ color }) => {
+const Button = ({ color, gradient }) => {
     return (
-        <StyledButton style={{backgroundColor: color}}>
+        <StyledButton style={{backgroundImage: gradient, backgroundColor: color}}>
             Get Started
         </StyledButton>
     );
