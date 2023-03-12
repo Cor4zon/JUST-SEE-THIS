@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import IconDesign from '../../assets/icon-design.svg';
 
-const Card = ({ title, description }) => {
+const Card = ({ title, description, icon = IconDesign }) => {
   return (
     <StyledCard>
+      <StyledIcon src={icon} alt="icon" />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
       <GetStartedLink>Get Started</GetStartedLink>
@@ -17,6 +19,10 @@ const StyledCard = styled.div`
   background: #ffffff;
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   border-radius: 10px;
+  padding: 56px 29px 32px 28px;
+  text-align: left;
+  margin-top: 40px;
+  position: relative;
 `;
 
 const CardTitle = styled.p`
@@ -44,4 +50,14 @@ const GetStartedLink = styled.a`
   font-size: 18px;
   line-height: 28px;
   color: #f74780;
+`;
+
+const StyledIcon = styled.img`
+  background-color: red;
+  border-radius: 100px;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -24px;
+  left: 28px;
 `;
