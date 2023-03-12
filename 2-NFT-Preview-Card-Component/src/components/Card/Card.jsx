@@ -5,7 +5,7 @@ import AvatarImg from '../../assets/images/image-avatar.png';
 import IconView from '../../assets/images/icon-view.svg';
 import IconEthereum from '../../assets/images/icon-ethereum.svg';
 import IconClock from '../../assets/images/icon-clock.svg';
-import EquilibriumHoverImg from '../../assets/images/image-equilibrium-hover.png'
+import EquilibriumHoverImg from '../../assets/images/image-equilibrium-hover.png';
 
 const Card = () => {
   return (

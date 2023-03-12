@@ -14,10 +14,10 @@ header {
 }
 
 footer {
-  background: #13183F;
+  background: #13183f;
   height: 120px;
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   padding: 0 16px;
 }

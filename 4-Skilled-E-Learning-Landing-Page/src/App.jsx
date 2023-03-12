@@ -25,9 +25,18 @@ function App() {
           <Button gradient={`linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)`} />
           <StyledHeroImg />
 
-          <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
-          <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
-            <Card title={'Animation'} description='Learn the latest animation techniques to create stunning motion design and captivate your audience.' />
+          <Card
+            title={'Animation'}
+            description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+          />
+          <Card
+            title={'Animation'}
+            description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+          />
+          <Card
+            title={'Animation'}
+            description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+          />
         </Content>
       </main>
 
