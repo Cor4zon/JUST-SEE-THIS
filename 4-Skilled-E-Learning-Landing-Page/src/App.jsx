@@ -17,13 +17,17 @@ function App() {
       </header>
       <main>
         <Content>
-          <TitleText>Maximize skill, minimize budget</TitleText>
-          <InfoText>
-            Our modern courses across a range of in-demand skills will give you the
-            knowledge you need to live the life you want.
-          </InfoText>
-          <Button gradient={`linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)`} />
+          <MainContentWrapper>
+          <Wrapper>
+            <TitleText>Maximize skill, minimize budget</TitleText>
+            <InfoText>
+              Our modern courses across a range of in-demand skills will give you the
+              knowledge you need to live the life you want.
+            </InfoText>
+            <Button gradient={`linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)`} />
+          </Wrapper>
           <StyledHeroImg />
+          </MainContentWrapper>
 
           <Card
             title={'Animation'}
@@ -56,6 +60,17 @@ const Content = styled.div`
   padding: 16px;
 `;
 
+const MainContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+  }
+`;
+
+const Wrapper = styled.div``;
+
 const TitleText = styled.p`
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
@@ -81,4 +96,9 @@ const StyledHeroImg = styled.div`
   background-size: cover;
   width: 100%;
   height: 300px;
+
+  @media (min-width: 500px) {
+   background-image: url(${HeroImgDesktop}); 
+   background-size: containt;
+  }
 `;
