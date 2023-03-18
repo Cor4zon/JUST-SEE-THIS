@@ -50,6 +50,11 @@ const GetStartedLink = styled.a`
   font-size: 18px;
   line-height: 28px;
   color: #f74780;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffa7c3;
+  }
 `;
 
 const StyledIcon = styled.img`
