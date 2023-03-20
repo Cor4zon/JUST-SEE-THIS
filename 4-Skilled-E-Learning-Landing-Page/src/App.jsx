@@ -7,6 +7,7 @@ import HeroImgMobile from './assets/image-hero-mobile.png';
 import HeroImgTablet from './assets/image-hero-tablet.png';
 import HeroImgDesktop from './assets/image-hero-desktop.png';
 import Card from './components/card/Card';
+import CardGrid from './components/card-grid/CardGrid';
 
 function App() {
   return (
@@ -18,29 +19,43 @@ function App() {
       <main>
         <Content>
           <MainContentWrapper>
-          <Wrapper>
-            <TitleText>Maximize skill, minimize budget</TitleText>
-            <InfoText>
-              Our modern courses across a range of in-demand skills will give you the
-              knowledge you need to live the life you want.
-            </InfoText>
-            <Button gradient={`linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)`} />
-          </Wrapper>
-          <StyledHeroImg />
+            <Wrapper>
+              <TitleText>Maximize skill, minimize budget</TitleText>
+              <InfoText>
+                Our modern courses across a range of in-demand skills will give you the
+                knowledge you need to live the life you want.
+              </InfoText>
+              <Button gradient={`linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)`} />
+            </Wrapper>
+            <StyledHeroImg />
           </MainContentWrapper>
 
-          <Card
-            title={'Animation'}
-            description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
-          />
-          <Card
-            title={'Animation'}
-            description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
-          />
-          <Card
-            title={'Animation'}
-            description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
-          />
+          <CardGrid>
+            <Card
+              title={'Animation'}
+              description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+            />
+            <Card
+              title={'Animation'}
+              description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+            />
+            <Card
+              title={'Animation'}
+              description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+            />
+            <Card
+              title={'Animation'}
+              description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+            />
+            <Card
+              title={'Animation'}
+              description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+            />
+            <Card
+              title={'Animation'}
+              description="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+            />
+          </CardGrid>
         </Content>
       </main>
 
@@ -98,7 +113,7 @@ const StyledHeroImg = styled.div`
   height: 300px;
 
   @media (min-width: 500px) {
-   background-image: url(${HeroImgDesktop}); 
-   background-size: containt;
+    background-image: url(${HeroImgDesktop});
+    background-size: containt;
   }
 `;
