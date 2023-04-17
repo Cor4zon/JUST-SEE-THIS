@@ -10,6 +10,7 @@ export const Colors = {
   common: {
     black: '#000',
     white: '#fff',
+    purple: '#483EFF',
   },
   
 };
