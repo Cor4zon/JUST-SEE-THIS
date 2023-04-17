@@ -1,11 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Button = () => {
+export const Button = ({ text, style}) => {
     return (
-        <div>
-            
-        </div>
+        <StyledButton style={style}>
+            {text}
+        </StyledButton>
     );
 };
 
-export default Button;
+const StyledButton = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #022959;
+    border-radius: 4px;
+    padding: 12px 16px;
+    color: white;
+`;
