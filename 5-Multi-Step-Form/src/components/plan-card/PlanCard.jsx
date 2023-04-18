@@ -6,9 +6,13 @@ const PlanCard = ({color, icon, name, price}) => {
         <PlanCardContainer>
             <PlanIcon $color={color} $icon={icon} />
             <div>
-                <p>{name}</p>
-                <p>{price}</p>
+                <PlanTitle>{name}</PlanTitle>
+        <PlanPrice>{price}</PlanPrice>
             </div>
+
+
+
+
         </PlanCardContainer>
     );
 };
@@ -29,4 +33,17 @@ const PlanIcon = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 100px;
+`;
+
+const PlanTitle = styled.p`
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+color: #022959;
+`;
+
+const PlanPrice = styled.p`
+
 `;
