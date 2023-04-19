@@ -22,7 +22,7 @@ Fix unworking linter
 
 Added custom fonts
 
-Dynamic image loading (wip)🔥
+Dynamic image loading
 
 **Learned:**
 
