@@ -5,10 +5,10 @@ const PlanCard = ({ icon, name, price }) => {
   return (
     <PlanCardContainer>
       <PlanIcon $icon={icon} />
-      <div>
+      <PlanInfoWrapper>
         <PlanTitle>{name}</PlanTitle>
-        <PlanPrice>{price}</PlanPrice>
-      </div>
+        <PlanPrice>${price}/mo</PlanPrice>
+      </PlanInfoWrapper>
     </PlanCardContainer>
   );
 };
@@ -20,8 +20,11 @@ const PlanCardContainer = styled.div`
   border: 1px solid #d6d9e6;
   border-radius: 8px;
 
-  width: 295px;
-  height: 77px;
+  min-width: 295px;
+  height: 77px; // temp?
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
 `;
 
 const PlanIcon = styled.div`
@@ -29,6 +32,10 @@ const PlanIcon = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 100px;
+`;
+
+const PlanInfoWrapper = styled.div`
+    margin-left: 14px;
 `;
 
 const PlanTitle = styled.p`
@@ -40,4 +47,11 @@ const PlanTitle = styled.p`
   color: #022959;
 `;
 
-const PlanPrice = styled.p``;
+const PlanPrice = styled.p`
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699aa;
+`;
