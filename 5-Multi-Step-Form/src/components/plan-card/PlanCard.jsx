@@ -2,6 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PlanCard = ({color, icon, name, price}) => {
+    let a = 10
+
+    const b = () => {
+        console.log('mew')
+    }
     return (
         <PlanCardContainer>
             <PlanIcon $color={color} $icon={icon} />
