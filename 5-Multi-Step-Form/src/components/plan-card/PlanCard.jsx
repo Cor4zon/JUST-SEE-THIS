@@ -1,54 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const PlanCard = ({color, icon, name, price}) => {
-    let a = 10
-
-    const b = () => {
-        console.log('mew')
-    }
-    return (
-        <PlanCardContainer>
-            <PlanIcon $color={color} $icon={icon} />
-            <div>
-                <PlanTitle>{name}</PlanTitle>
+const PlanCard = ({ icon, name, price }) => {
+  return (
+    <PlanCardContainer>
+      <PlanIcon $icon={icon} />
+      <div>
+        <PlanTitle>{name}</PlanTitle>
         <PlanPrice>{price}</PlanPrice>
-            </div>
-
-
-
-
-        </PlanCardContainer>
-    );
+      </div>
+    </PlanCardContainer>
+  );
 };
 
 export default PlanCard;
 
 const PlanCardContainer = styled.div`
-    background: #FFFFFF;
-    border: 1px solid #D6D9E6;
-    border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #d6d9e6;
+  border-radius: 8px;
 
-    width: 295px;
-    height: 77px;
+  width: 295px;
+  height: 77px;
 `;
 
 const PlanIcon = styled.div`
-    background-image: url(${props => props.$icon});
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
+  background-image: url(${(props) => props.$icon});
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
 `;
 
 const PlanTitle = styled.p`
-    font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 18px;
-color: #022959;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #022959;
 `;
 
-const PlanPrice = styled.p`
-
-`;
+const PlanPrice = styled.p``;
