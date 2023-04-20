@@ -40,7 +40,7 @@ const PlanInfoWrapper = styled.div`
 `;
 
 const PlanTitle = styled.p`
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu-Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -51,12 +51,13 @@ const PlanTitle = styled.p`
 `;
 
 const PlanPrice = styled.p`
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu-Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #9699aa;
   margin: 0;
+  margin-top: 7px;
   display: flex;
 `;
