@@ -25,6 +25,7 @@ const PlanCardContainer = styled.div`
   display: flex;
   align-items: center;
   padding-left: 16px;
+  margin-top: 12px;
 `;
 
 const PlanIcon = styled.div`
@@ -45,6 +46,8 @@ const PlanTitle = styled.p`
   font-size: 16px;
   line-height: 18px;
   color: #022959;
+  margin: 0;
+  display: flex;
 `;
 
 const PlanPrice = styled.p`
@@ -54,4 +57,6 @@ const PlanPrice = styled.p`
   font-size: 14px;
   line-height: 20px;
   color: #9699aa;
+  margin: 0;
+  display: flex;
 `;
